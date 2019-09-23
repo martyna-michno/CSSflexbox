@@ -15,31 +15,33 @@ body{
 
 .flex-container{
 
-
     display: flex;
-    background: white;
-    flex-wrap: wrap-reverse;
+    background: grey;
+    flex-wrap: wrap;
 }
 
 .box{
     height: 100px;
-    min-width: 200px;
-flex-grow: 1;
+flex: 1;
+
 }
 
 .one{
     background: red;
+   
 }
 
 .two{
 
 background: blue;
+
 }
 .three{
 background: green;
 
 
+
 }
 
-/*jak bedzie mniej niz minimalna to zaczyna sie przesuwac, wrap przesuwa do linijki dalej*/
-/* wrap reverse przesuwa do gory */
+/*flex basis to inaczej min-width, ale jak przegladarka zmniejszy sie do rozmiarow ponizej, to one sie kurcza dalej - bez efektu przesuwaka */
+/*flex: 1(grow), 1(shrink), basis (0px); domyslnie */
