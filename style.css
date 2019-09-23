@@ -9,46 +9,35 @@ body{
 
 .wrapper{
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 960px;
+
+
 }
 
-.flex-container{
-
+#blocks{
     display: flex;
-    background: grey;
-    flex-wrap: wrap;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
+    margin: 10px;
+    justify-content: space-between;
+
 }
-
-
-/*align-items do drugiej osi */
-/*justify content zawsze dziala na glownej osi */
-.box{
-    height: 100px;
+#blocks div{
 flex: 0 0 100px;
+padding: 40px 0;
+text-align: center;
+background: grey;
 
 }
 
 .one{
-    background: red;
-   
+    order: 0;
 }
 
 .two{
-
-background: blue;
-
+    order: 0;
 }
 .three{
-background: green;
-
-
-
+    order: 0;
 }
-
-/*flex basis to inaczej min-width, ale jak przegladarka zmniejszy sie do rozmiarow ponizej, to one sie kurcza dalej - bez efektu przesuwaka */
-/*flex: 1(grow), 1(shrink), basis (0px); domyslnie */
+four.{
+    order: 0;
+}
