@@ -18,28 +18,28 @@ body{
 
     display: flex;
     background: white;
+    flex-wrap: wrap-reverse;
 }
 
 .box{
     height: 100px;
-    width: 320px;
-
+    min-width: 200px;
+flex-grow: 1;
 }
 
 .one{
     background: red;
-   flex-shrink: 1;
 }
 
 .two{
 
 background: blue;
-flex-shrink: 2;
 }
 .three{
 background: green;
-flex-shrink; 3;
+
 
 }
 
-/*im wiekszy flex-shrink, tym szybcije/wiecej sie kurczy*/
+/*jak bedzie mniej niz minimalna to zaczyna sie przesuwac, wrap przesuwa do linijki dalej*/
+/* wrap reverse przesuwa do gory */
